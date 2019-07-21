@@ -3,6 +3,46 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="parent" />
+        <module name="dm-scheduler-provider" />
+        <module name="dm-base-provider" />
+        <module name="dm-item-consumer" />
+        <module name="dm-common-module" />
+        <module name="dm-item-provider" />
+        <module name="dm-common-utils" />
+        <module name="dm-user-provider" />
+        <module name="dm-common-dao" />
+        <module name="dm-common-dto" />
+        <module name="dm-eureka-server" />
+        <module name="dm-user-consumer" />
+        <module name="dm-pay-provider" />
+        <module name="dm-order-provider" />
+        <module name="dm-common-client" />
+        <module name="dm-common-ext-utils" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dm-base-provider" target="1.8" />
+      <module name="dm-common" target="1.8" />
+      <module name="dm-common-client" target="1.6" />
+      <module name="dm-common-dao" target="1.8" />
+      <module name="dm-common-dto" target="1.8" />
+      <module name="dm-common-ext-utils" target="1.8" />
+      <module name="dm-common-module" target="1.6" />
+      <module name="dm-common-utils" target="1.8" />
+      <module name="dm-eureka-server" target="1.8" />
+      <module name="dm-item-consumer" target="1.8" />
+      <module name="dm-item-provider" target="1.8" />
+      <module name="dm-order-provider" target="1.8" />
+      <module name="dm-pay-provider" target="1.8" />
+      <module name="dm-scheduler-provider" target="1.8" />
+      <module name="dm-user-consumer" target="1.8" />
+      <module name="dm-user-provider" target="1.8" />
+      <module name="parent" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
