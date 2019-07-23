@@ -10,9 +10,9 @@ public interface DmAreaMapper {
 
 	public DmArea getDmAreaById(@Param(value = "id") Long id)throws Exception;
 
-	public List<DmArea>	getDmAreaListByMap(Map<String,Object> param)throws Exception;
+	public List<DmArea>	getDmAreaListByMap(Map<String, Object> param)throws Exception;
 
-	public Integer getDmAreaCountByMap(Map<String,Object> param)throws Exception;
+	public Integer getDmAreaCountByMap(Map<String, Object> param)throws Exception;
 
 	public Integer insertDmArea(DmArea dmArea)throws Exception;
 
@@ -20,6 +20,6 @@ public interface DmAreaMapper {
 
 	public Integer deleteDmAreaById(@Param(value = "id") Long id)throws Exception;
 
-	public Integer batchDeleteDmArea(Map<String,List<String>> params);
+	public Integer batchDeleteDmArea(Map<String, List<String>> params);
 
 }

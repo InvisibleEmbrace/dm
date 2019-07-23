@@ -20,10 +20,10 @@ public interface RestDmLinkUserClient {
 public DmLinkUser getDmLinkUserById(@RequestParam("id") Long id)throws Exception;
 
 @RequestMapping(value = "/getDmLinkUserListByMap",method = RequestMethod.POST)
-public List<DmLinkUser>	getDmLinkUserListByMap(@RequestParam Map<String,Object> param)throws Exception;
+public List<DmLinkUser>	getDmLinkUserListByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/getDmLinkUserCountByMap",method = RequestMethod.POST)
-public Integer getDmLinkUserCountByMap(@RequestParam Map<String,Object> param)throws Exception;
+public Integer getDmLinkUserCountByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/qdtxAddDmLinkUser",method = RequestMethod.POST)
 public Integer qdtxAddDmLinkUser(@RequestBody DmLinkUser dmLinkUser)throws Exception;

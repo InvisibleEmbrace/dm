@@ -21,10 +21,10 @@ public interface RestDmItemCommentClient {
 public DmItemComment getDmItemCommentById(@RequestParam("id") Long id)throws Exception;
 
 @RequestMapping(value = "/getDmItemCommentListByMap",method = RequestMethod.POST)
-public List<DmItemComment>	getDmItemCommentListByMap(@RequestParam Map<String,Object> param)throws Exception;
+public List<DmItemComment>	getDmItemCommentListByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/getDmItemCommentCountByMap",method = RequestMethod.POST)
-public Integer getDmItemCommentCountByMap(@RequestParam Map<String,Object> param)throws Exception;
+public Integer getDmItemCommentCountByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/qdtxAddDmItemComment",method = RequestMethod.POST)
 public Integer qdtxAddDmItemComment(@RequestBody DmItemComment dmItemComment)throws Exception;

@@ -10,9 +10,9 @@ public interface DmSchedulerMapper {
 
 	public DmScheduler getDmSchedulerById(@Param(value = "id") Long id)throws Exception;
 
-	public List<DmScheduler>	getDmSchedulerListByMap(Map<String,Object> param)throws Exception;
+	public List<DmScheduler>	getDmSchedulerListByMap(Map<String, Object> param)throws Exception;
 
-	public Integer getDmSchedulerCountByMap(Map<String,Object> param)throws Exception;
+	public Integer getDmSchedulerCountByMap(Map<String, Object> param)throws Exception;
 
 	public Integer insertDmScheduler(DmScheduler dmScheduler)throws Exception;
 
@@ -20,6 +20,6 @@ public interface DmSchedulerMapper {
 
 	public Integer deleteDmSchedulerById(@Param(value = "id") Long id)throws Exception;
 
-	public Integer batchDeleteDmScheduler(Map<String,List<String>> params);
+	public Integer batchDeleteDmScheduler(Map<String, List<String>> params);
 
 }

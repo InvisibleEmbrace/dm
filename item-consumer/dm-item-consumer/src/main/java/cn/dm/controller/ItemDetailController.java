@@ -5,10 +5,12 @@ import cn.dm.common.Dto;
 import cn.dm.common.LogUtils;
 import cn.dm.service.ItemDetailService;
 import cn.dm.vo.ItemDetailVo;
+import cn.dm.vo.ItemSchedulerVo;
 import org.springframework.web.bind.annotation.*;
 import sun.rmi.runtime.Log;
 
 import javax.annotation.Resource;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -31,4 +33,10 @@ public class ItemDetailController {
         return itemDetailService.queryItemDetail((long) id);
     }
 
+    @ResponseBody
+    @RequestMapping(value = "/p/queryItemScheduler",method = RequestMethod.POST)
+    public Dto<List<ItemSchedulerVo>> queryItemScheduler(@RequestBody Map<String, Object> param) throws Exception {
+        Integer id = Integer.parseInt(param.get("itemId").toString());
+        return itemDetailService.queryItemScheduler((long)id);
+    }
 }

@@ -10,9 +10,9 @@ public interface DmImageMapper {
 
 	public DmImage getDmImageById(@Param(value = "id") Long id)throws Exception;
 
-	public List<DmImage>	getDmImageListByMap(Map<String,Object> param)throws Exception;
+	public List<DmImage>	getDmImageListByMap(Map<String, Object> param)throws Exception;
 
-	public Integer getDmImageCountByMap(Map<String,Object> param)throws Exception;
+	public Integer getDmImageCountByMap(Map<String, Object> param)throws Exception;
 
 	public Integer insertDmImage(DmImage dmImage)throws Exception;
 
@@ -20,6 +20,6 @@ public interface DmImageMapper {
 
 	public Integer deleteDmImageById(@Param(value = "id") Long id)throws Exception;
 
-	public Integer batchDeleteDmImage(Map<String,List<String>> params);
+	public Integer batchDeleteDmImage(Map<String, List<String>> params);
 
 }

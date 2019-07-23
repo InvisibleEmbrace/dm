@@ -21,10 +21,10 @@ public interface RestDmCinemaSeatClient {
 public DmCinemaSeat getDmCinemaSeatById(@RequestParam("id") Long id)throws Exception;
 
 @RequestMapping(value = "/getDmCinemaSeatListByMap",method = RequestMethod.POST)
-public List<DmCinemaSeat>	getDmCinemaSeatListByMap(@RequestParam Map<String,Object> param)throws Exception;
+public List<DmCinemaSeat>	getDmCinemaSeatListByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/getDmCinemaSeatCountByMap",method = RequestMethod.POST)
-public Integer getDmCinemaSeatCountByMap(@RequestParam Map<String,Object> param)throws Exception;
+public Integer getDmCinemaSeatCountByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/qdtxAddDmCinemaSeat",method = RequestMethod.POST)
 public Integer qdtxAddDmCinemaSeat(@RequestBody DmCinemaSeat dmCinemaSeat)throws Exception;

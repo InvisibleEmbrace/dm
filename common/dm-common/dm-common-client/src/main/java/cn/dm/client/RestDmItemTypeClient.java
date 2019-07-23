@@ -21,10 +21,10 @@ public interface RestDmItemTypeClient {
 public DmItemType getDmItemTypeById(@RequestParam("id") Long id)throws Exception;
 
 @RequestMapping(value = "/getDmItemTypeListByMap",method = RequestMethod.POST)
-public List<DmItemType>	getDmItemTypeListByMap(@RequestParam Map<String,Object> param)throws Exception;
+public List<DmItemType>	getDmItemTypeListByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/getDmItemTypeCountByMap",method = RequestMethod.POST)
-public Integer getDmItemTypeCountByMap(@RequestParam Map<String,Object> param)throws Exception;
+public Integer getDmItemTypeCountByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/qdtxAddDmItemType",method = RequestMethod.POST)
 public Integer qdtxAddDmItemType(@RequestBody DmItemType dmItemType)throws Exception;

@@ -21,10 +21,10 @@ public interface RestDmAreaClient {
 public DmArea getDmAreaById(@RequestParam("id") Long id)throws Exception;
 
 @RequestMapping(value = "/getDmAreaListByMap",method = RequestMethod.POST)
-public List<DmArea>	getDmAreaListByMap(@RequestParam Map<String,Object> param)throws Exception;
+public List<DmArea>	getDmAreaListByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/getDmAreaCountByMap",method = RequestMethod.POST)
-public Integer getDmAreaCountByMap(@RequestParam Map<String,Object> param)throws Exception;
+public Integer getDmAreaCountByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/qdtxAddDmArea",method = RequestMethod.POST)
 public Integer qdtxAddDmArea(@RequestBody DmArea dmArea)throws Exception;

@@ -21,10 +21,10 @@ public interface RestDmKeywordSortClient {
 public DmKeywordSort getDmKeywordSortById(@RequestParam("id") Long id)throws Exception;
 
 @RequestMapping(value = "/getDmKeywordSortListByMap",method = RequestMethod.POST)
-public List<DmKeywordSort>	getDmKeywordSortListByMap(@RequestParam Map<String,Object> param)throws Exception;
+public List<DmKeywordSort>	getDmKeywordSortListByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/getDmKeywordSortCountByMap",method = RequestMethod.POST)
-public Integer getDmKeywordSortCountByMap(@RequestParam Map<String,Object> param)throws Exception;
+public Integer getDmKeywordSortCountByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/qdtxAddDmKeywordSort",method = RequestMethod.POST)
 public Integer qdtxAddDmKeywordSort(@RequestBody DmKeywordSort dmKeywordSort)throws Exception;

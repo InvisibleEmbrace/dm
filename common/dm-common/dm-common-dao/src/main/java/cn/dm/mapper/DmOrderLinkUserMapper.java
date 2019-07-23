@@ -10,9 +10,9 @@ public interface DmOrderLinkUserMapper {
 
 	public DmOrderLinkUser getDmOrderLinkUserById(@Param(value = "id") Long id)throws Exception;
 
-	public List<DmOrderLinkUser>	getDmOrderLinkUserListByMap(Map<String,Object> param)throws Exception;
+	public List<DmOrderLinkUser>	getDmOrderLinkUserListByMap(Map<String, Object> param)throws Exception;
 
-	public Integer getDmOrderLinkUserCountByMap(Map<String,Object> param)throws Exception;
+	public Integer getDmOrderLinkUserCountByMap(Map<String, Object> param)throws Exception;
 
 	public Integer insertDmOrderLinkUser(DmOrderLinkUser dmOrderLinkUser)throws Exception;
 
@@ -20,6 +20,8 @@ public interface DmOrderLinkUserMapper {
 
 	public Integer deleteDmOrderLinkUserById(@Param(value = "id") Long id)throws Exception;
 
-	public Integer batchDeleteDmOrderLinkUser(Map<String,List<String>> params);
+	public Integer deleteDmOrderLinkUserByOrderId(@Param(value = "orderId") Long orderId)throws Exception;
+
+	public Integer batchDeleteDmOrderLinkUser(Map<String, List<String>> params);
 
 }

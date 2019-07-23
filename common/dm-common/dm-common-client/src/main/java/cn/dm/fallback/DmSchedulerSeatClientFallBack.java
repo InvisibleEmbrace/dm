@@ -34,4 +34,9 @@ public class DmSchedulerSeatClientFallBack implements RestDmSchedulerSeatClient 
     public Integer qdtxModifyDmSchedulerSeat(DmSchedulerSeat dmSchedulerSeat)throws Exception{
         return null;
     }
+
+    @Override
+    public DmSchedulerSeat getDmSchedulerSeatByOrder(Long scheduleId, Integer x, Integer y) throws Exception {
+        return null;
+    }
 }

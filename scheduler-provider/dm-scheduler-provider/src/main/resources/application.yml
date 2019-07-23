@@ -1,0 +1,17 @@
+server:
+  port: 7051
+spring:
+  application:
+    name: dm-scheduler-provider
+  datasource:
+    url: jdbc:mysql://192.168.31.137:3306/dm_scheduler?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+moduleName: dm-scheduler-provider
+eureka:
+  client:
+    service-url:
+       defaultZone: http://root:123456@localhost:7776/eureka/

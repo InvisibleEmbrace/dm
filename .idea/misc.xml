@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/scheduler-provider/dm-scheduler-provider/pom.xml" />
         <option value="$PROJECT_DIR$/user-provider/dm-user-provider/pom.xml" />
         <option value="$PROJECT_DIR$/user-consumer/dm-user-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/order-consumer/dm-order-consumer/pom.xml" />
       </list>
     </option>
   </component>

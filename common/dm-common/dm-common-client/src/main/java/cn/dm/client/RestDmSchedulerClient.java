@@ -20,10 +20,10 @@ public interface RestDmSchedulerClient {
 public DmScheduler getDmSchedulerById(@RequestParam("id") Long id)throws Exception;
 
 @RequestMapping(value = "/getDmSchedulerListByMap",method = RequestMethod.POST)
-public List<DmScheduler>	getDmSchedulerListByMap(@RequestParam Map<String,Object> param)throws Exception;
+public List<DmScheduler>	getDmSchedulerListByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/getDmSchedulerCountByMap",method = RequestMethod.POST)
-public Integer getDmSchedulerCountByMap(@RequestParam Map<String,Object> param)throws Exception;
+public Integer getDmSchedulerCountByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/qdtxAddDmScheduler",method = RequestMethod.POST)
 public Integer qdtxAddDmScheduler(@RequestBody DmScheduler dmScheduler)throws Exception;

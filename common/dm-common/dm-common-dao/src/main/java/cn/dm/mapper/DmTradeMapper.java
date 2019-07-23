@@ -10,9 +10,9 @@ public interface DmTradeMapper {
 
 	public DmTrade getDmTradeById(@Param(value = "id") Long id)throws Exception;
 
-	public List<DmTrade>	getDmTradeListByMap(Map<String,Object> param)throws Exception;
+	public List<DmTrade>	getDmTradeListByMap(Map<String, Object> param)throws Exception;
 
-	public Integer getDmTradeCountByMap(Map<String,Object> param)throws Exception;
+	public Integer getDmTradeCountByMap(Map<String, Object> param)throws Exception;
 
 	public Integer insertDmTrade(DmTrade dmTrade)throws Exception;
 
@@ -20,6 +20,6 @@ public interface DmTradeMapper {
 
 	public Integer deleteDmTradeById(@Param(value = "id") Long id)throws Exception;
 
-	public Integer batchDeleteDmTrade(Map<String,List<String>> params);
+	public Integer batchDeleteDmTrade(Map<String, List<String>> params);
 
 }

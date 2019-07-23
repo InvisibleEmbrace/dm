@@ -10,9 +10,9 @@ public interface DmItemMapper {
 
 	public DmItem getDmItemById(@Param(value = "id") Long id)throws Exception;
 
-	public List<DmItem>	getDmItemListByMap(Map<String,Object> param)throws Exception;
+	public List<DmItem>	getDmItemListByMap(Map<String, Object> param)throws Exception;
 
-	public Integer getDmItemCountByMap(Map<String,Object> param)throws Exception;
+	public Integer getDmItemCountByMap(Map<String, Object> param)throws Exception;
 
 	public Integer insertDmItem(DmItem dmItem)throws Exception;
 
@@ -20,6 +20,6 @@ public interface DmItemMapper {
 
 	public Integer deleteDmItemById(@Param(value = "id") Long id)throws Exception;
 
-	public Integer batchDeleteDmItem(Map<String,List<String>> params);
+	public Integer batchDeleteDmItem(Map<String, List<String>> params);
 
 }

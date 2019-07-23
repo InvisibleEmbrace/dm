@@ -10,19 +10,20 @@
         <module name="parent" />
         <module name="dm-scheduler-provider" />
         <module name="dm-base-provider" />
+        <module name="dm-order-consumer" />
         <module name="dm-item-consumer" />
         <module name="dm-common-module" />
+        <module name="dm-user-provider" />
         <module name="dm-item-provider" />
         <module name="dm-common-utils" />
-        <module name="dm-user-provider" />
         <module name="dm-common-dao" />
         <module name="dm-common-dto" />
-        <module name="dm-eureka-server" />
         <module name="dm-user-consumer" />
         <module name="dm-pay-provider" />
         <module name="dm-order-provider" />
         <module name="dm-common-client" />
         <module name="dm-common-ext-utils" />
+        <module name="dm-eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -37,6 +38,7 @@
       <module name="dm-eureka-server" target="1.8" />
       <module name="dm-item-consumer" target="1.8" />
       <module name="dm-item-provider" target="1.8" />
+      <module name="dm-order-consumer" target="1.8" />
       <module name="dm-order-provider" target="1.8" />
       <module name="dm-pay-provider" target="1.8" />
       <module name="dm-scheduler-provider" target="1.8" />

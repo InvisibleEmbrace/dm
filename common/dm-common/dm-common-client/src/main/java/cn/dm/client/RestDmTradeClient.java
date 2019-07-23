@@ -21,10 +21,10 @@ public interface RestDmTradeClient {
 public DmTrade getDmTradeById(@RequestParam("id") Long id)throws Exception;
 
 @RequestMapping(value = "/getDmTradeListByMap",method = RequestMethod.POST)
-public List<DmTrade>	getDmTradeListByMap(@RequestParam Map<String,Object> param)throws Exception;
+public List<DmTrade>	getDmTradeListByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/getDmTradeCountByMap",method = RequestMethod.POST)
-public Integer getDmTradeCountByMap(@RequestParam Map<String,Object> param)throws Exception;
+public Integer getDmTradeCountByMap(@RequestParam Map<String, Object> param)throws Exception;
 
 @RequestMapping(value = "/qdtxAddDmTrade",method = RequestMethod.POST)
 public Integer qdtxAddDmTrade(@RequestBody DmTrade dmTrade)throws Exception;

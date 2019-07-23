@@ -10,9 +10,9 @@ public interface DmCinemaSeatMapper {
 
 	public DmCinemaSeat getDmCinemaSeatById(@Param(value = "id") Long id)throws Exception;
 
-	public List<DmCinemaSeat>	getDmCinemaSeatListByMap(Map<String,Object> param)throws Exception;
+	public List<DmCinemaSeat>	getDmCinemaSeatListByMap(Map<String, Object> param)throws Exception;
 
-	public Integer getDmCinemaSeatCountByMap(Map<String,Object> param)throws Exception;
+	public Integer getDmCinemaSeatCountByMap(Map<String, Object> param)throws Exception;
 
 	public Integer insertDmCinemaSeat(DmCinemaSeat dmCinemaSeat)throws Exception;
 
@@ -20,6 +20,6 @@ public interface DmCinemaSeatMapper {
 
 	public Integer deleteDmCinemaSeatById(@Param(value = "id") Long id)throws Exception;
 
-	public Integer batchDeleteDmCinemaSeat(Map<String,List<String>> params);
+	public Integer batchDeleteDmCinemaSeat(Map<String, List<String>> params);
 
 }

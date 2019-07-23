@@ -10,9 +10,9 @@ public interface DmItemCommentMapper {
 
 	public DmItemComment getDmItemCommentById(@Param(value = "id") Long id)throws Exception;
 
-	public List<DmItemComment>	getDmItemCommentListByMap(Map<String,Object> param)throws Exception;
+	public List<DmItemComment>	getDmItemCommentListByMap(Map<String, Object> param)throws Exception;
 
-	public Integer getDmItemCommentCountByMap(Map<String,Object> param)throws Exception;
+	public Integer getDmItemCommentCountByMap(Map<String, Object> param)throws Exception;
 
 	public Integer insertDmItemComment(DmItemComment dmItemComment)throws Exception;
 
@@ -20,6 +20,6 @@ public interface DmItemCommentMapper {
 
 	public Integer deleteDmItemCommentById(@Param(value = "id") Long id)throws Exception;
 
-	public Integer batchDeleteDmItemComment(Map<String,List<String>> params);
+	public Integer batchDeleteDmItemComment(Map<String, List<String>> params);
 
 }
